@@ -1,0 +1,16 @@
+{
+    "name": "resume",
+    "version": "1.0.0",
+    "description": "A minimal setup for HTML and SCSS",
+    "scripts": {
+        "build:sass": "sass src/scss:dist/css --style compressed",
+        "watch:sass": "sass --watch src/scss:dist/css --style compressed",
+        "serve": "browser-sync start --server --files 'dist/css/*.css, *.html'",
+        "start": "npm-run-all -p watch:sass serve"
+    },
+    "devDependencies": {
+        "browser-sync": "^3.0.2",
+        "npm-run-all": "^4.1.5",
+        "sass": "^1.77.8"
+    }
+}
