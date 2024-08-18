@@ -29,11 +29,18 @@ body {
 }
 
 .column {
-  &.large { flex: 2; }
-  &.small { flex: 1; }
+  &.large {
+    flex: 2;
+  }
+
+  &.small {
+    flex: 1;
+  }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: $primary-color;
   margin-bottom: 2mm;
 }
@@ -58,7 +65,8 @@ h3 {
   font-weight: bold;
 }
 
-p, li {
+p,
+li {
   margin-bottom: 2mm;
 }
 
@@ -109,6 +117,13 @@ ul {
   }
 }
 
+.company-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .timeline-date {
   position: absolute;
   left: 0;
@@ -122,10 +137,18 @@ ul {
 .location {
   font-size: $font-size-small;
 }
+
 i {
   margin-right: 10px;
   color: $primary-color;
+
+
 }
+
+.fa-location-dot, .fa-building {
+  margin-right: 2px;
+}
+
 .profile-card {
   max-width: 900px;
   width: 100%;
@@ -145,6 +168,7 @@ i {
 
   .profile-info {
     width: 160px;
+
     h1 {
       color: $secondary-color;
       margin: 0;
@@ -172,7 +196,7 @@ i {
       margin: 5px 0;
     }
 
-    
+
   }
 }
 
@@ -204,4 +228,3 @@ i {
     -webkit-print-color-adjust: exact;
   }
 }
-
