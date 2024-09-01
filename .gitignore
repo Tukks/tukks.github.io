@@ -1,8 +1,6 @@
 # Ignore node_modules directory
 node_modules/
 
-# Ignore the generated CSS files in the dist directory
-dist/css/
 
 # Ignore logs and OS specific files
 *.log
