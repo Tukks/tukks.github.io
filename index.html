@@ -21,15 +21,15 @@
                 <p>Senior Software Engineer</p>
             </div>
         </div>
-        <div class="profile-right column small">
-            <p><i class="fas fa-envelope" style="color: #666"></i> giuseppe06@gmail.com</p>
-            <p><i class="fas fa-phone" style="color: #666"></i> +33650562325</p>
-            <p><i class="fa-brands fa-linkedin" style="color: #666"></i> linkedin.com/in/lapentagiuseppe</p>
-            <p><i class="fa-brands fa-github" style="color: #666"></i> github.com/Tukks</p>
-            <p><i class="fas fa-birthday-cake" style="color: #666"></i> 10/12/1990</p>
-        </div>
-    </div>
 
+    </div>
+    <div class="description-toggle no-print">
+        <label class="switch">
+            <input type="checkbox" id="descriptionToggle">
+            <span class="slider"></span>
+        </label>
+        <span id="toggleLabel">Short Description</span>
+    </div>
     <div class="row">
         <div class="column large">
 
@@ -43,9 +43,29 @@
                                 <h3>Senior Software Engineer</h3>
                                 <p>Enovacom</p>
                             </div>
-                            <p>Lead developer of a team of 5 developers.</p>
-                            <p>Worked on the Carnet application to streamline pre-admissions in healthcare facilities.
-                            </p>
+                            <p class="short-description">Lead developer for the Carnet application, focusing on code
+                                quality, architecture design, and team management.</p>
+                            <div class="long-description">
+                                <p>At Enovacom, I lead the development of the Carnet application, which helps healthcare
+                                    facilities manage patient pre-admissions more efficiently using FHIR. My main job is
+                                    to
+                                    make sure the code quality is high by setting and maintaining development standards.
+                                </p>
+
+                                <p>I also play a key role in designing the project's architecture. Leading a team of
+                                    five
+                                    developers, I focus on mentoring them, organizing tasks, and helping them improve
+                                    their
+                                    skills. This is important for keeping the team effective and on track with our
+                                    goals.</p>
+
+                                <p>In addition, I work closely with Product Owners and Project Managers, giving them
+                                    technical advice on new features. My input helps make sure that the technical side
+                                    of
+                                    our projects meets both the team's goals and the users' needs.</p>
+                            </div>
+
+
                             <p><strong>Technologies:</strong> Java, Spring, React, Scrum, Gitlab CI, Docker.</p>
                             <p class="location">
                                 <i class="fa-solid fa-location-dot"></i> Marseille, France
@@ -60,11 +80,30 @@
                                 <h3>Lead Developer / Scrum Master</h3>
                                 <p>Monext</p>
                             </div>
+                            <p class="short-description">Led a team of nine, working on projects like 3DSv2, card
+                                payment systems, and back-office migration from JSP to Angular.</p>
+                            <div class="long-description">
+                                <p>At Monext, I was the Lead Developer and Scrum Master for a team of around nine
+                                    people,
+                                    including a Product Owner,
+                                    Scrum Master, two QA engineers, and five developers.
+                                    We worked on important projects like 3DSv2, card payment systems, and completely
+                                    rebuilding the back-office system using Angular.</p>
 
-                            <p>Scrum master and lead developer of a team of 5 developers.</p>
-                            <p>Worked on Payline project, a payment solution handling millions of transactions per day.
-                            </p>
-                            <p><strong>Technologies:</strong> Java, Spring, Angular, Scrum, Gitlab CI, Kubernetes.</p>
+                                <p>As a Scrum Master, I helped the team overcome technical
+                                    and organizational challenges. I made sure they were not distracted by outside
+                                    interruptions, allowing them to focus on their work. I also made sure that
+                                    communication
+                                    was clear between the development team, the Product Owner, and other stakeholders.
+                                </p>
+
+                                <p>My job also included making sure the team understood and followed Scrum principles. I
+                                    regularly coached the team to ensure we were all aligned with Scrum values, which
+                                    helped
+                                    us deliver our projects successfully and on time.</p>
+                                <p><strong>Technologies:</strong> Java, Spring, Angular, Scrum, Gitlab CI, Kubernetes.
+                                </p>
+                            </div>
                             <p class="location">
                                 <i class="fa-solid fa-location-dot"></i> Aix-en-Provence, France
                             </p>
@@ -79,10 +118,10 @@
                                 <p>DTSI</p>
                             </div>
                             <p>
-                                <strong>ILDA:</strong> Web application for customs duty of New Caledonia. <br />
+                                <strong>ILDA:</strong> Web application for customs duty of New Caledonia made with
+                                Spring boot and Angular. <br />
                                 <strong>LISA:</strong> Information system for DITTT.<br />
                                 <strong>BASILIC:</strong> Real-time web application for New Caledonian elections.<br />
-
                                 <strong>GAC:</strong> Progressive Web App generating PDF files for inheritance<br />
                                 documents.
                             </p>
@@ -105,16 +144,16 @@
                                 Center in Roissy-Charles de Gaulle – SWAN project.</p>
                             <p><strong>Technologies:</strong> AngularJS, J2EE, Spring, Hibernate, ActiveMQ, Maven,
                                 Scrum, Angular 2, Ionic.</p>
-                            <p class="location">
-                                <i class="fa-solid fa-location-dot"></i> Sophia-Antipolis, France
-                            </p>
+
                         </div>
                     </li>
-
                     <!-- <li>
                         <div class="timeline-date">Sep 2015 Sep 2014</div>
                         <div class="timeline-content">
-                            <h3>Software Engineer Apprenticeship | SII, Sophia Antipolis</h3>
+                            <div class="company-name">
+                                <h3>Software Engineer Apprenticeship</h3>
+                                <p>SII</p>
+                            </div>
                             <p>Developed a tool to generate tests in Ada using Java GWT platform for Thales Alenia
                                 Space.</p>
                             <p><strong>Technologies:</strong> Java, Ada, GWT, Scrum.</p>
@@ -133,10 +172,19 @@
                         <div class="timeline-date">2013 - 2015</div>
                         <div class="timeline-content">
 
-                            <h3>2-year Master’s degree in Miage - MBDS</h3>
+                            <h3>2-year Master’s degree in Miage - Mobility, Big Data, and Systems Integration (MBDS)
+                            </h3>
                             <p>At University of Nice Sophia Antipolis</p>
-
                             <p>Computer Science applied to Business Management</p>
+                            <div class="long-description">
+                                <p>A specialized program combining computer science and business management, focused on
+                                    developing technical and managerial skills for optimizing business processes through
+                                    IT
+                                    solutions.</p>
+                                <p>Key courses: Software Engineering, Information Systems Management, Business
+                                    Intelligence,
+                                    Web and Mobile Development, Database Management</p>
+                            </div>
                             <p class="location">
                                 <i class="fa-solid fa-location-dot"></i> Sophia-Antipolis, France
                             </p>
@@ -149,7 +197,7 @@
                         <div class="timeline-content">
                             <h3>« Licence » (3-year university degree)</h3>
                             <p>At University of Nice Sophia Antipolis</p>
-                            <p>Equivalent to a Bachelor’s degree in MIAGE</p>
+                            <p>Equivalent to a Bachelor’s degree in Computer Science</p>
 
                             <p class="location">
                                 <i class="fa-solid fa-location-dot"></i> Nice, France
@@ -175,31 +223,63 @@
 
         <div class="column small">
             <div class="section">
+                <h2><i class="fa-regular fa-address-card"></i> Contact</h2>
+                <p><i class="fas fa-envelope" style="color: #666"></i> giuseppe06@gmail.com</p>
+                <p><i class="fas fa-phone" style="color: #666"></i> +33650562325</p>
+                <p><i class="fa-brands fa-linkedin" style="color: #666"></i> linkedin.com/in/lapentagiuseppe</p>
+                <p><i class="fa-brands fa-github" style="color: #666"></i> github.com/Tukks</p>
+                <p><i class="fas fa-birthday-cake" style="color: #666"></i> 10/12/1990</p>
+            </div>
+            <div class="section">
                 <h2><i class="fa-solid fa-user"></i> Why Me?</h2>
                 <p>Curious, always looking for opportunities to learn new things in Computer Science and general
                     knowledge.</p>
             </div>
             <div class="section">
                 <h2><i class="fa-solid fa-brain"></i> Skills</h2>
-                <p><strong>Programming Languages:</strong> Java, Spring boot, HTML/CSS, JQuery, Hibernate, SQL, Angular
-                    2, React, Javascript/Typescript</p>
+                <p><strong>Programming Languages:</strong> Java, HTML/CSS, SQL, Javascript/Typescript</p>
+                <p><strong>Framework/Library:</strong> Spring boot, Hibernate, Angular
+                    2, React, JQuery</p>
                 <p><strong>Tools:</strong> Jenkins, Maven, Gitlab CI, Gradle, Docker</p>
                 <p><strong>Methodologies:</strong> Scrum</p>
             </div>
 
             <div class="section">
                 <h2><i class="fa-solid fa-language"></i> Languages</h2>
-                <p>Bilingual in French and Italian; Fluent in English (TOEIC: 800/990).</p>
+                <p><strong>French:</strong> Native</p>
+                <p><strong>Italian:</strong> Native</p>
+                <p><strong>English:</strong> Fluent (TOEIC: 800/990)</p>
             </div>
 
             <div class="section">
                 <h2><i class="fa-solid fa-diagram-project"></i> Personal Projects</h2>
                 <p><strong>Film Info:</strong> Alexa app to get the synopsis or rating of a movie by voice.</p>
                 <p><strong>Éphéméride Wikipédia:</strong> Alexa app to get daily historical events.</p>
+                <p><strong>Cogito:</strong> Java/Angular PWA App to centralizes notes, links, and tweets with NLP
+                    tagging, advanced search and bulk tag editing.</p>
             </div>
         </div>
     </div>
 
+
+    <script>
+        const toggle = document.getElementById('descriptionToggle');
+        const toggleLabel = document.getElementById('toggleLabel');
+        const shortDescriptions = document.querySelectorAll('.short-description');
+        const longDescriptions = document.querySelectorAll('.long-description');
+
+        toggle.addEventListener('change', function () {
+            if (this.checked) {
+                shortDescriptions.forEach(desc => desc.style.display = 'none');
+                longDescriptions.forEach(desc => desc.style.display = 'block');
+                toggleLabel.textContent = 'Long Description';
+            } else {
+                shortDescriptions.forEach(desc => desc.style.display = 'block');
+                longDescriptions.forEach(desc => desc.style.display = 'none');
+                toggleLabel.textContent = 'Short Description';
+            }
+        });
+    </script>
 </body>
 
 </html>
